@@ -7,17 +7,17 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Web Dev Quiz 2022';
-
+  numArray = [];
   ngOnInit() {
     for (let i = 1; i <= 100; i++) {
       if (i % 3 == 0 && i % 5 == 0) {
-        console.log('amazon');
+        this.numArray.push('amazon');
       } else if (i % 5 == 0) {
-        console.log('facebook');
+        this.numArray.push('facebook');
       } else if (i % 3 == 0) {
-        console.log('google');
+        this.numArray.push('google');
       } else {
-        console.log(i);
+        this.numArray.push(i);
       }
     }
   }
